@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    h1{
+        color:red
+    }
+    .heading1{
+        color:aquamarine
+    }
+    .heading2{
+        color: blue;
+    }
+    #heading3{
+        color:burlywood
+    }
+    .headings{
+        background-color: cadetblue;
+        
+    }
+    .hic{
+        background-color: black;
+        color: yellow;
+    }
+
+</style>
 <body>
-    <h1>hello</h1>
-    <h2>hello</h2>
-    <h3>hello</h3>
-    <h4>hello</h4>
-    <h5>hello</h5>
-    <h6>hello</h6>
+    <div class="headings">
+        <h1>hello</h1>
+        <h2 class="heading1">hello</h2>
+        <h3 class="heading2">hello</h3>
+        <h4 id="heading3">hello</h4>
+        <h5>hello</h5>
+        <h6>hello</h6>
+    </div>
+  
     <hr>
     <P><b>Use of Bold tag</b>
         
-         elit.<br><strong> Use of Storng Tag </strong>Quod, hic
+         elit.<br><strong> Use of Storng Tag </strong>Quod, <span class="hic">hic</span>
          <br> <em>Use of Em tag </em> Adipisicing.</P>
     <hr>
     <a href="https://www.google.com">Google</a>
@@ -23,6 +49,7 @@
     <a href="https://www.google.com" target="_blank">Google Link 2</a>
     <hr>
     <img src="./mastercard.png" alt="master card img">
+    <h1>table</h1>
     <table border="1px">
         <thead>
             <th>name</th>
@@ -49,12 +76,16 @@
         </tbody>
     </table>
     <hr>
+    <h1>Form</h1>
     <form>
         <label for="username">Username :-</label>
         <input type="text" id="username" placeholder="Enter First Name"><br><br><hr>
 
         <label for="password">Passward:-</label>
         <input type="password" id="password" placeholder="Enter 8 digit password"><br><br><hr>
+
+        <label for="email">Email</label>
+        <input type="email" id="email"><hr>
 
         <label>Gender :-</label>
            <label for="male">Male</label>
@@ -72,13 +103,9 @@
         <label for="football">Football</label>
         <input type="checkbox" id="football" name="chess"><hr>
 
-        <!-- <label for="dog-names">Choose Country:</label> 
-             <select name="dog-names" id="dog-names"> 
-        <option value="rigatoni">Rigatoni</option> 
-        <option value="dave">Dave</option> 
-        <option value="pumpernickel">Pumpernickel</option> 
-        <option value="reeses">Reeses</option> 
-             </select> -->
+        <input type="submit" value="Submit">
+
+       <p>symbol entity &gt;  &copy; &#8377; &lt;</p><hr>
 
              <label for="Cname">Country :-</label>
              <select id="Cname">
@@ -96,6 +123,28 @@
 
         <!-- <label>username</label>
         <input type="text"><br><br> -->
-    </form>
+
+    </form><hr>
+    <h1>List</h1>
+    <ol type="a">
+        <li>hello1</li>
+        <li>hell02</li>
+        <li>hello3</li>
+        <li>hello4</li>
+    </ol><hr>
+    <ul list-style-type: disc;>
+        <li>hello1</li>
+        <li>hell02</li>
+        <li>hello3</li>
+        <li>hello4</li>
+    </ul>
+    <h4>description list ,description term ,description data,mark</h4>
+    <dl>
+        <dt>guitar</dt>     
+        <dd>guitar is a 6 string instrument</dd>
+    </dl><hr>
+    <mark>saveen</mark>
+
+
 </body>
 </html>
